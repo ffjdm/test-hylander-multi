@@ -10,7 +10,7 @@
     <extension target="web#SERVLET">
         <servlet>
             <servlet-name>Nuxeo Hylander Servlet</servlet-name>
-            <servlet-class>org.nuxeo.cloud.HylanderServlet</servlet-class>
+            <servlet-class>org.nuxeo.cloud.hylander.HylanderServlet</servlet-class>
             <load-on-startup>1</load-on-startup>
         </servlet>
         <servlet-mapping>

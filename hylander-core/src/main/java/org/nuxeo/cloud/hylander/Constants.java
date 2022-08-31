@@ -17,7 +17,7 @@
  *     Frantz Fischer
  */
 
-package org.nuxeo.cloud;
+package org.nuxeo.cloud.hylander;
 
 /**
  * @since 11.5

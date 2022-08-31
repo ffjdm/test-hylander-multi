@@ -17,10 +17,7 @@
  *     Frantz Fischer
  */
 
-package org.nuxeo.cloud;
-
-import static org.nuxeo.cloud.Constants.MESSAGE_ATTRIBUTE;
-import static org.nuxeo.cloud.Constants.HYLANDER_JSP;
+package org.nuxeo.cloud.hylander;
 
 import java.io.IOException;
 
@@ -50,8 +47,8 @@ public class HylanderServlet extends HttpServlet {
             throws ServletException, IOException {
         log.debug("[doGet] BEGIN");
 
-        request.setAttribute(MESSAGE_ATTRIBUTE, "Hey! this is a test from Nuxeo!");
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher(HYLANDER_JSP);
+        request.setAttribute(Constants.MESSAGE_ATTRIBUTE, "Hey! this is a test from Nuxeo!");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher(Constants.HYLANDER_JSP);
         requestDispatcher.forward(request, response);
         log.debug("[doGet] END");
     }
