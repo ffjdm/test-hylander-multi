@@ -27,10 +27,4 @@ public class Constants {
     public static final String HYLANDER_JSP = "/hylander.jsp";
     public static final String MESSAGE_ATTRIBUTE = "customMessage";
 
-    // -------- Datadog reporter properties ---------------
-    public static final String DATADOG_REPORTER_HOST = "datadog.host";
-
-    // -------- Datadog integrated properties ---------------
-    public static final String METRICS_DATADOG_HOST = "metrics.datadog.hostname";
-
 }

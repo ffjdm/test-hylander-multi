@@ -32,6 +32,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.nuxeo.runtime.api.Framework;
 
+import static org.nuxeo.cloud.hylander.Constants.HYLANDER_JSP;
+import static org.nuxeo.cloud.hylander.Constants.MESSAGE_ATTRIBUTE;
+
 /**
  * @since 11.5
  */
@@ -47,8 +50,9 @@ public class HylanderServlet extends HttpServlet {
             throws ServletException, IOException {
         log.debug("[doGet] BEGIN");
 
-        request.setAttribute(Constants.MESSAGE_ATTRIBUTE, "Hey! this is a test from Nuxeo!");
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher(Constants.HYLANDER_JSP);
+        request.setAttribute(MESSAGE_ATTRIBUTE, "Hey! This is a test from Hyland!");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher(HYLANDER_JSP);
+
         requestDispatcher.forward(request, response);
         log.debug("[doGet] END");
     }
