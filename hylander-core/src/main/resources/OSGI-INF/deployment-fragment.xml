@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<fragment version="1">
+
+    <install>
+        <unzip from="${bundle.fileName}" to="/" prefix="web">
+            <include>web/nuxeo.war/**</include>
+        </unzip>
+    </install>
+
+    <extension target="web#SERVLET">
+        <servlet>
+            <servlet-name>Nuxeo Hylander Servlet</servlet-name>
+            <servlet-class>org.nuxeo.cloud.HylanderServlet</servlet-class>
+            <load-on-startup>1</load-on-startup>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>Nuxeo Hylander Servlet</servlet-name>
+            <url-pattern>/hylander</url-pattern>
+        </servlet-mapping>
+    </extension>
+
+</fragment>

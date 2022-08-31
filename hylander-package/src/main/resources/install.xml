@@ -1,0 +1,6 @@
+<install>
+
+  <!-- Bundles installation based on Nuxeo version -->
+  <update file="${package.root}/install/bundles" todir="${env.bundles}" />
+
+</install>
